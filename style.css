@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url("https://images.unsplash.com/photo-1682687219570-4c596363fd96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1975&q=80");
+}
+.box{
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+#strip{
+    width: 50px;
+    height: 200px;
+    /* background-color: #695454; */
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform-origin: bottom;
+    transition: all ease 0.5s;
+    background: transparent;
+}
+#strip_box{
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;  
+}
+.first_strip{
+    transform: translateX(-50%) rotate(-45deg);
+    z-index: 9;
+}
+.first_strip_box{
+  border: 2px solid salmon;
+}
+.second_strip{
+    transform: translateX(-50%) rotate(0deg);
+    z-index: 9;
+}
+.second_strip_box{
+    border: 2px solid yellowgreen;
+}
+.third_strip{
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 9;
+}
+.third_strip_box{
+    border: 2px solid palevioletred;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10%;
+    left: 45%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transform-origin: center;
+    transform: rotate(-180deg);
+    transition: all ease 1s;
+    border: 3px solid rgba(163, 5, 58, 0.46);
+}
+i{
+    font-size: 20px;
+    font-weight: 900;
+}
+.circle>i{
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -20%);
+}
+@media (max-width:600px) {
+    .box{
+        width: 100vw;
+        height: 50vh;
+        background-color: #939393;
+        position: relative;
+        overflow: hidden;
+        background: transparent;
+        object-fit: cover;
+    }
+    #strip{
+        width: 50px;
+        height: 200px;
+        /* background-color: #695454; */
+        position: absolute;
+        bottom: -30%;
+        left: 50%;
+        transform-origin: bottom;
+        transition: all ease 0.5s;
+    }
+    .circle{
+        width: 100px;
+        height: 100px;
+        background-color: #c8c3c3;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -10%;
+        left: 38%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        transform-origin: center;
+        transform: rotate(-180deg);
+        transition: all ease 1s;
+    }
+}
