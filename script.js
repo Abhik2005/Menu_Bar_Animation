@@ -8,7 +8,6 @@ circle.addEventListener("click", function () {
      document.querySelector(".circle>i").style.transform = "translate(-50%,-45%)";
     count = 1;
   } else {
-    console.log("hii");
     circle.style.rotate = "0deg";
     document.querySelector(".circle>i").style.bottom = "20%";
     document.querySelector(".circle>i").style.left = "50%";
